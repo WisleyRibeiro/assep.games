@@ -124,7 +124,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                         </div>
                         <ul>
                           <li><i class="fa fa-star"></i> 4.8</li>
-                          <li><i class="fa fa-download"></i> 2.3M</li>
+                          <li><i class="fa fa-download"></i> 147</li>
                         </ul>
                       </div>
                     </div>
@@ -132,9 +132,9 @@ https://templatemo.com/tm-579-cyborg-gaming
                       <div class="right-info">
                         <ul>
                           <li><i class="fa fa-star"></i> 4.8</li>
-                          <li><i class="fa fa-download"></i> 2.3M</li>
-                          <li><i class="fa fa-server"></i> 36GB</li>
-                          <li><i class="fa fa-gamepad"></i> Action</li>
+                          <li><i class="fa fa-download"></i> 147</li>
+                          <li><i class="fa fa-server"></i> 64MB</li>
+                          <li><i class="fa fa-gamepad"></i> Educativo</li>
                         </ul>
                       </div>
                     </div>
@@ -153,12 +153,36 @@ https://templatemo.com/tm-579-cyborg-gaming
                           Protegendo (Núcleo NASA)</a> para crianças e adolescentes do Bairro <a href="https://encurtador.com.br/fISgO"
                           target="_blank">Borba Gato - Sabará, MG.</a> O diferencial deste projeto, é que todos os jogos 
                         disponíveis, foram criados por profissionais da própria ASSEP, como desenvolvedor e profissionais da 
-                      educação infantil. Todos os conteúdos forma analisados antes de serem lançados.</p>
+                      educação infantil. Todos os conteúdos foram analisados antes de serem lançados. O projeto
+                    não se prende somente ao bairro Borba Gato, mas para qualquer um de qualquer lugar. Este é
+                  o nosso presente para a sociedade que anceia por ajuda.</p>
                     </div>
-                    <div class="col-lg-12">
-                      <div class="main-border-button">
-                        <a href="#">Aproveite e Divulgue!</a>
-                      </div>
+                    <div class="main-border-button">
+                      <style>
+                          .main-border-button .Share-Link {
+                              color: white; 
+                              text-decoration: none; 
+                              cursor: pointer; 
+                          }
+                      </style>
+                      <script>
+                          function sharelink(link){
+                              if (navigator.share) {
+                                  navigator.share({
+                                      title: document.title,
+                                      url: link
+                                  }).then(() => {
+                                      alert('Link compartilhado com sucesso.');
+                                  }).catch((error) => {
+                                      alert('Erro ao compartilhar o link:', error);
+                                  });
+                              } else {
+                                  alert('API Web Share não suportada neste navegador.');
+                              }
+                          }
+                      </script>
+                      <a class="Share-Link" onclick="sharelink('https://wisleyribeiro.github.io/assep.games/')">Aproveite e Divulgue!</a>
+                  </div>
                     </div>
                   </div>
                 </div>
